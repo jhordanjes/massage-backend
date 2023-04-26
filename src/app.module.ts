@@ -9,7 +9,9 @@ import { AvatarsModule } from './avatars/avatars.module';
 @Module({
   imports: [
     ConfigModule.forRoot(),
-    MongooseModule.forRoot(process.env.DATABASE_MONGODB),
+    MongooseModule.forRoot(
+      'mongodb+srv://jhordan:eMveJraoMlHfOGs5@cluster0.0b3jhva.mongodb.net/test',
+    ),
     UsersModule,
     AuthModule,
     AppointmentsModule,
