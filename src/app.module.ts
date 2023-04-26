@@ -10,7 +10,7 @@ import { AvatarsModule } from './avatars/avatars.module';
   imports: [
     ConfigModule.forRoot(),
     MongooseModule.forRoot(
-      'mongodb+srv://jhordan:eMveJraoMlHfOGs5@cluster0.0b3jhva.mongodb.net/test?directConnection=true',
+      'mongodb+srv://jhordan:eMveJraoMlHfOGs5@cluster0.0b3jhva.mongodb.net/?retryWrites=true&w=majority',
     ),
     UsersModule,
     AuthModule,
